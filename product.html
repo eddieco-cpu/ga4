@@ -170,29 +170,29 @@
 
 
       // g tag
-        // document.getElementById('confirm_add_cart').addEventListener('click', () => {
-        //   let tag = {
-        //     currency: product.currency,
-        //     value: product.value * pcs_range.value,
-        //     items: [
-        //       {
-        //         item_id: product.id,
-        //         item_name: product.type + '。' + product.name,
-        //         item_brand: "Backbone",
-        //         item_category: "Chair",
-        //         item_category2: "Seat",
-        //         item_category3: product.id,
-        //         price: product.value,
-        //         quantity: pcs_range.value * 1,
-        //       }
-        //     ],
-        //     item_id: product.id,
-        //     quantity: pcs_range.value * 1,
-        //     price: product.value
-        //   }
-        //   console.log('--- tag ---', tag)
-        //   gtag("event", "add_to_cart", tag);
-        // })
+        document.getElementById('confirm_add_cart').addEventListener('click', () => {
+          let tag = {
+            currency: product.currency,
+            value: product.value * pcs_range.value,
+            items: [
+              {
+                item_id: product.id,
+                item_name: product.type + '。' + product.name,
+                item_brand: "Backbone",
+                item_category: "Chair",
+                item_category2: "Seat",
+                item_category3: product.id,
+                price: product.value,
+                quantity: pcs_range.value * 1,
+              }
+            ],
+            item_id: product.id,
+            quantity: pcs_range.value * 1,
+            price: product.value
+          }
+          console.log('--- tag ---', tag)
+          gtag("event", "add_to_cart", tag);
+        })
     </script>
 </body>
 </html>
